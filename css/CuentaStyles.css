@@ -1,0 +1,179 @@
+/*BARRA SUPERIOR-------------------------------------------------------------------------------------------*/
+
+/* Estilos para la barra de navegación */
+.navbar {
+    height: 60px;
+    font-family: 'Instrument Serif', serif;
+    font-size: larger;
+    letter-spacing: 1px;
+}
+
+.container-fluid {
+    background-color: #242222;
+    height: 60px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #ffffff; 
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #ffffff; 
+    font-weight: bold;
+}
+
+/* Estilos para cuando un botón está activo o seleccionado */
+.navbar-nav .nav-item .active,
+.navbar-nav .nav-item .nav-link:hover {
+    color: #000000; 
+    background-color: #007bff;
+    animation: colorChange 2s infinite; 
+}
+
+/* Estilo interactivo para los botones del menú */
+.navbar-nav .nav-link {
+    padding: 10px 15px;
+    border-radius: 7px;
+    transition: all 0.2s ease-in-out;
+}
+
+.dropdown-divider {
+    background-color: white;
+}  
+  
+/* Estilo para resaltar las opciones "CONTACTO" */
+.navbar-nav .dropdown-menu a.dropdown-item:hover {
+    background-color: #007bff;
+    color: #000000;
+    animation: colorChange 2s infinite;
+}
+
+@keyframes colorChange {
+    0% {
+      background-color: #337ab7;
+    }
+    35% {
+      background-color: #f441a5;
+    }
+    70% {
+      background-color: #ffeb3b;
+    }
+    100% {
+        background-color: #337ab7;
+    }
+}
+
+/*FIN BARRA SUPERIOR-----------------------------------------------------------------------------------------*/
+
+
+/*LOGIN------------------------------------------------------------------------------------------------------*/
+#video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.formul {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    min-width: 280px;
+    max-width: 25%;
+    width: 25%;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 15px;
+    box-shadow: 0 1rem 1rem  rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(1rem);
+    border-radius: 5px;
+    color: #fff;
+}
+
+.iniciars {
+    position: relative;
+    font-size: 18px;
+    margin-bottom: 15px;
+    padding-bottom: 7px;
+}
+
+.iniciars::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #fff;
+    width: 120px;
+    left: 0;
+    bottom: 0;    
+}
+
+.input-container {
+    display: flex;
+}
+
+.inputCU {
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 5px 6px;
+    margin-bottom: 15px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    order: 2;
+}
+
+.material-icons {
+    order: 1;
+    margin-right: 8px;
+    margin-top: 5px;
+}
+
+#icon1,
+#icon2 {
+    font-size: 32px;
+}  
+
+.btnIni {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height:40px ;
+    background-color: #1a141496;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    color: #fff;
+}
+
+.btnIni:hover {
+    background-color: #5d5b5b96;
+    animation: colorCambio 2s infinite;
+}
+
+@keyframes colorCambio {
+    0% {
+      background-color: #1a141496;
+    }
+    50% {
+      background-color: #5d5b5b96;
+    }
+    100% {
+        background-color: #1a141496;
+    }
+}
+
+.link {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bolder;
+}
+
+/*FIN LOGIN---------------------------------------------------------------------------------------------*/

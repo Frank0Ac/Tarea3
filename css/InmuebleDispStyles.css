@@ -1,0 +1,141 @@
+/*BARRA SUPERIOR-------------------------------------------------------------------------------------------*/
+
+/* Estilos para la barra de navegación */
+.navbar {
+    height: 60px;
+    font-family: 'Instrument Serif', serif;
+    font-size: larger;
+    letter-spacing: 1px;
+}
+
+.container-fluid {
+    background-color: #242222;
+    height: 60px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #ffffff; 
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #ffffff; 
+    font-weight: bold;
+}
+
+/* Estilos para cuando un botón está activo o seleccionado */
+.navbar-nav .nav-item .active,
+.navbar-nav .nav-item .nav-link:hover {
+    color: #000000; 
+    background-color: #007bff;
+    animation: colorChange 2s infinite; 
+}
+
+/* Estilo interactivo para los botones del menú */
+.navbar-nav .nav-link {
+    padding: 10px 15px;
+    border-radius: 7px;
+    transition: all 0.2s ease-in-out;
+}
+
+.dropdown-divider {
+    background-color: white;
+}  
+  
+/* Estilo para resaltar las opciones "CONTACTO" */
+.navbar-nav .dropdown-menu a.dropdown-item:hover {
+    background-color: #007bff;
+    color: #000000;
+    animation: colorChange 2s infinite;
+}
+
+@keyframes colorChange {
+    0% {
+      background-color: #337ab7;
+    }
+    35% {
+      background-color: #f441a5;
+    }
+    70% {
+      background-color: #ffeb3b;
+    }
+    100% {
+        background-color: #337ab7;
+    }
+}
+
+/*FIN BARRA SUPERIOR-----------------------------------------------------------------------------------------*/
+
+
+/*CARTAS-----------------------------------------------------------------------------------------------------*/
+.row {
+    padding-top: 20px;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1000%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M249 143L248 300' stroke-width='6' stroke='url(%23SvgjsLinearGradient1001)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M965 433L964 580' stroke-width='10' stroke='url(%23SvgjsLinearGradient1001)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M36 1L35 -281' stroke-width='10' stroke='url(%23SvgjsLinearGradient1001)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M948 229L947 508' stroke-width='10' stroke='url(%23SvgjsLinearGradient1001)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M1397 220L1396 437' stroke-width='10' stroke='url(%23SvgjsLinearGradient1001)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M812 169L811 -181' stroke-width='10' stroke='url(%23SvgjsLinearGradient1002)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1259 122L1258 -270' stroke-width='6' stroke='url(%23SvgjsLinearGradient1001)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M698 81L697 281' stroke-width='10' stroke='url(%23SvgjsLinearGradient1001)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M843 184L842 -17' stroke-width='6' stroke='url(%23SvgjsLinearGradient1001)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M1438 360L1437 754' stroke-width='10' stroke='url(%23SvgjsLinearGradient1002)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1 468L0 225' stroke-width='10' stroke='url(%23SvgjsLinearGradient1001)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M1333 81L1332 391' stroke-width='10' stroke='url(%23SvgjsLinearGradient1001)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M1292 155L1291 336' stroke-width='6' stroke='url(%23SvgjsLinearGradient1002)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1087 143L1086 423' stroke-width='10' stroke='url(%23SvgjsLinearGradient1002)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M481 520L480 139' stroke-width='10' stroke='url(%23SvgjsLinearGradient1001)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M1262 16L1261 -288' stroke-width='8' stroke='url(%23SvgjsLinearGradient1001)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M346 503L345 331' stroke-width='6' stroke='url(%23SvgjsLinearGradient1001)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M972 399L971 771' stroke-width='6' stroke='url(%23SvgjsLinearGradient1001)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M366 96L365 -96' stroke-width='8' stroke='url(%23SvgjsLinearGradient1001)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M812 89L811 -74' stroke-width='10' stroke='url(%23SvgjsLinearGradient1002)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1283 458L1282 867' stroke-width='8' stroke='url(%23SvgjsLinearGradient1002)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M374 103L373 -233' stroke-width='8' stroke='url(%23SvgjsLinearGradient1002)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M761 424L760 248' stroke-width='6' stroke='url(%23SvgjsLinearGradient1001)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M1256 163L1255 -4' stroke-width='10' stroke='url(%23SvgjsLinearGradient1002)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1323 440L1322 582' stroke-width='10' stroke='url(%23SvgjsLinearGradient1002)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M951 359L950 536' stroke-width='10' stroke='url(%23SvgjsLinearGradient1001)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M71 526L70 186' stroke-width='10' stroke='url(%23SvgjsLinearGradient1001)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M752 535L751 900' stroke-width='6' stroke='url(%23SvgjsLinearGradient1001)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M170 95L169 245' stroke-width='8' stroke='url(%23SvgjsLinearGradient1002)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M99 15L98 186' stroke-width='8' stroke='url(%23SvgjsLinearGradient1002)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1210 51L1209 410' stroke-width='6' stroke='url(%23SvgjsLinearGradient1001)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M931 441L930 755' stroke-width='6' stroke='url(%23SvgjsLinearGradient1001)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M1237 350L1236 -59' stroke-width='6' stroke='url(%23SvgjsLinearGradient1001)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M198 419L197 234' stroke-width='8' stroke='url(%23SvgjsLinearGradient1002)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M299 273L298 -93' stroke-width='10' stroke='url(%23SvgjsLinearGradient1002)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M628 489L627 891' stroke-width='10' stroke='url(%23SvgjsLinearGradient1002)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1000'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='0%25' y1='0%25' x2='0%25' y2='100%25' id='SvgjsLinearGradient1001'%3e%3cstop stop-color='rgba(28%2c 83%2c 142%2c 0)' offset='0'%3e%3c/stop%3e%3cstop stop-color='%231c538e' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='0%25' y1='100%25' x2='0%25' y2='0%25' id='SvgjsLinearGradient1002'%3e%3cstop stop-color='rgba(28%2c 83%2c 142%2c 0)' offset='0'%3e%3c/stop%3e%3cstop stop-color='%231c538e' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+}
+
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+  
+.card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0px 0px 20px rgba(194, 179, 179, 0.8);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+  
+.card-body {
+    padding: 20px;
+    background-color: #242222;
+}
+  
+.card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;    
+}
+
+.city {
+    color: white;
+}
+  
+.card-text {
+    font-size: 16px;
+    color: #a8a2a2;
+    margin-bottom: 20px;
+}
+  
+.btn {
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+  
+.btn:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+    animation: colorCambio 2s infinite;
+}
+
+@keyframes colorCambio {
+    0% {
+      background-color: #0069d9;
+    }    
+    50% {
+      background-color: #343ba0;
+    }
+    100% {
+        background-color: #337ab7;
+    }
+}
+
+/*FIN CARTAS-------------------------------------------------------------------------------------------------*/

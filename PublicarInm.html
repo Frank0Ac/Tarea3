@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Bienes Raíces </title>
+    <link rel="stylesheet" type="text/css" href="css/PublicarInmStyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" 
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" 
+        crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!--Barra superior-->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Index.html" style="color: white;"> Inicio </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="InmuebleDisp.html"> Inmuebles Disponibles </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="PublicarInm.html"> Publicar Inmuebles </a>
+                    </li>                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="Cuenta.html"> Mi Cuenta </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Contacto
+                        </a>
+                        <ul class="dropdown-menu" style="background-color: #242222;">
+                            <li><a class="dropdown-item" href="FormContacto.html" style="color: white;"> Formulario de Contacto </a></li>
+                            <li><a class="dropdown-item" href="FormPQRS.html" style="color: white;"> Formato de PQRS </a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="Presentacion.html" style="color: white;"> Detalles personales </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Formulario-->
+    <div class="bodyform">
+        <form class="formPubli">
+            <h1> Datos del Inmueble </h1>
+            <hr class="linea"> 
+
+            <h2 class="seccion"> Información de contacto </h2>
+
+            <label> Nombre Completo </label> <br>
+            <label for="nombres" class="subtitulos"> Nombres </label> <br>
+            <input type="text" id="nombres" placeholder="Escriba sus nombres"> <br>
+            <label for="apellidos" class="subtitulos"> Apellidos </label> <br>
+            <input type="text" id="apellidos" placeholder="Escribas sus apellidos"> <br>
+
+            <label for="correo"> Correo </label>
+            <input type="email" id="correo"> <br>
+
+            <label for="celular"> Celular </label>
+            <input type="number" id="celular"> <br>        
+            
+            <br> <h2 class="seccion"> Información del Inmueble </h2>        
+
+            <label> Tipo de Inmueble </label> <br>
+            <label for="casa" class="tipo_inm"> Casa </label> 
+            <input type="radio" id="casa" name="grupo1" value="opcion1"> 
+            <label for="apartamento" class="tipo_inm"> Apartamento </label>
+            <input type="radio" id="apartamento" name="grupo1" value="opcion2">
+            <label for="terreno" class="tipo_inm"> Terreno </label>
+            <input type="radio" id="terreno" name="grupo1" value="opcion3"> 
+            <label for="edificio" class="tipo_inm"> Edificio </label>
+            <input type="radio" id="edificio" name="grupo1" value="opcion4"> 
+            <label for="estacionamiento" class="tipo_inm"> Estacionamiento </label>
+            <input type="radio" id="estacionamiento" name="grupo1" value="opcion5"> 
+            <label for="hotel" class="tipo_inm"> Hotel </label>
+            <input type="radio" id="hotel" name="grupo1" value="opcion6">
+            <label for="finca" class="tipo_inm"> Finca </label>
+            <input type="radio" id="finca" name="grupo1" value="opcion7"> 
+            <label for="otro" class="tipo_inm"> Otro </label>
+            <input type="radio" id="otro" name="grupo1" value="opcion8"> <br>
+
+            <label> Dirección del Inmueble </label> <br>
+            <label for="direccion" class="subtitulos"> Dirección de la calle y barrio </label> <br>
+            <input type="text" id="direccion"> <br>
+            <label for="ciudad" class="subtitulos"> Ciudad </label> <br>
+            <input type="text" id="ciudad"> <br>
+
+            <label for="area"> Área total del Inmueble (m <sup> 2 </sup> ) </label>
+            <input type="number" id="area">  <br>
+
+            <label for="construccion"> Año de construcción </label>
+            <input type="number" id="construccion" min="1500" max="2023"> <br>
+
+            <label for="estado"> Estado del Inmueble </label>
+            <select id="estado">
+                <option disabled selected> Seleccione </option>
+                <option > Nuevo </option>
+                <option> Usado </option>
+                <option> Para remodelar </option>
+            </select> <br>
+
+            <label for="calidad"> Calidad de la construcción </label>
+            <select id="calidad">
+                <option disabled selected> Seleccione </option>
+                <option> Alta </option>
+                <option> Media </option>
+                <option> Baja </option>
+            </select> <br>
+
+            <label for="tipo"> Tipo de construcción </label>
+            <select id="tipo">
+                <option disabled selected> Seleccione </option>
+                <option> Tradicional </option>
+                <option> Moderno </option>
+                <option> Minimalista </option>
+            </select> <br>
+
+            <label for="tipo_terreno"> Tipo de terreno </label>
+            <select id="tipo_terreno">
+                <option disabled selected> Seleccione </option>
+                <option> Plano </option>
+                <option> Inclinado </option>
+                <option> Irregular </option>
+            </select> <br>
+
+            <label for="suelo"> Tipo de suelo o acabado </label>
+            <select id="suelo">
+                <option disabled selected> Seleccione </option>
+                <option> Madera </option>
+                <option> Cerámica </option>
+                <option> Alfombra </option>
+            </select> <br>
+
+            <label> Nivel de equipamiento </label> <br>
+            <label for="amoblado" class="niv_equipamiento"> Amoblado </label>
+            <input type="checkbox" id="amoblado">
+            <label for="electro" class="niv_equipamiento"> Electrodomésticos </label>
+            <input type="checkbox" id="electro">
+            <label for="n_otro" class="niv_equipamiento"> Otro </label>
+            <input type="checkbox" id="n_otro"> 
+            <label for="nada" class="niv_equipamiento"> Ninguno </label>
+            <input type="checkbox" id="nada"> <br>
+
+            <label> Orientación del Inmueble </label> <br>
+            <label for="norte" class="orientacion_inm"> Norte </label>
+            <input type="radio" id="orientacion" name="grupo2" value="opcion1">
+            <label for="sur" class="orientacion_inm"> Sur </label>
+            <input type="radio" id="sur" name="grupo2" value="opcion2"> <br>
+            <label for="este" class="orientacion_inm"> Este </label>
+            <input type="radio" id="este" name="grupo2" value="opcion3">
+            <label for="oeste" class="orientacion_inm"> Oeste </label>
+            <input type="radio" id="oeste" name="grupo2" value="opcion4"> <br>
+
+            <label for="habitaciones"> Habitaciones </label>
+            <input type="number" id="habitaciones"> <br>
+
+            <label for="baños"> Baños </label>
+            <input type="number" id="baños"> <br>
+
+            <label for="garajes"> Garajes </label>
+            <input type="number" id="garajes"> <br>
+
+            <label for="detalles"> Detalles del Inmueble</label>
+            <textarea id="detalles" cols="72" rows="10" placeholder="Describa el Inmueble"></textarea> <br>
+
+            <label for="estrato"> Estrato </label>
+            <select id="estado">
+                <option disabled selected> Seleccione </option>
+                <option > 0 </option>
+                <option > 1 </option>
+                <option > 2 </option>
+                <option > 3 </option>
+                <option > 4 </option>
+                <option > 5 </option>
+                <option > 6 </option>
+                <option > 7 </option>
+                <option > 8 </option>
+                <option > 9 </option>
+                <option > 10 </option>
+            </select> <br>
+
+            <label> Servicios públicos </label> <br>
+            <label for="agua" class="serv_publicos"> Agua </label>
+            <input type="checkbox" id="agua">
+            <label for="luz" class="serv_publicos"> Luz </label>
+            <input type="checkbox" id="luz">
+            <label for="gas" class="serv_publicos"> Gas </label>
+            <input type="checkbox" id="gas">
+            <label for="alcantarillado" class="serv_publicos"> Alcantarillado </label>
+            <input type="checkbox" id="alcantarillado"> <br>
+
+            <label> Características cercanas a la zona </label> <br>
+            <label for="parque" class="carac_zona"> Parques </label>
+            <input type="checkbox" id="zona">
+            <label for="centro" class="carac_zona"> Centros comerciales </label>
+            <input type="checkbox" id="centro">
+            <label for="restaurante" class="carac_zona"> Restaurantes </label>
+            <input type="checkbox" id="restaurante">
+            <label for="transporte" class="carac_zona"> Transporte público </label>
+            <input type="checkbox" id="transporte"> <br>
+
+            <label> Sistema de seguridad </label> <br>
+            <label for="camara" class="sis_seguridad"> Cámaras </label>
+            <input type="checkbox" id="camara">
+            <label for="alarma" class="sis_seguridad"> Alarmas </label>
+            <input type="checkbox" id="alarma">
+            <label for="vigilancia" class="sis_seguridad"> Vigilancia </label>
+            <input type="checkbox" id="vigilancia"> <br>
+
+            <br> <h2 class="seccion"> Información de venta y alquiler </h2>
+
+            <label for="operacion"> Tipo de Operación </label>
+            <select id="operacion">
+                <option disabled selected> Seleccione </option>
+                <option> Arriendo </option>
+                <option> Venta </option>
+                <option> Anticres </option>
+            </select> <br>
+
+            <label for="precio"> Precio Inmueble </label>
+            <input type="number" id="precio"> <br>
+
+            <label> Moneda </label> <br>
+            <label for="dolar" class="moneda"> Dolar </label>
+            <input type="radio" id="dolar" name="grupo3" value="opcion1">
+            <label for="peso" class="moneda"> Peso </label>
+            <input type="radio" id="peso" name="grupo3" value="opcion2"> <br>
+
+            <label> Forma de pago </label> <br>
+            <label for="efectivo" class="pago"> Efectivo </label>
+            <input type="radio" id="efectivo" name="grupo4" value="opcion1">
+            <label for="cheque" class="pago"> Cheque </label>
+            <input type="radio" id="cheque" name="grupo4" value="opcion2">
+            <label for="transferencia" class="pago"> Transferencia</label>
+            <input type="radio" id="transferencia" name="grupo4" value="opcion3"> <br>                
+
+            <br> <h2 class="seccion"> Multimedia y documentación </h2>        
+            
+            <label for="estado"> Estado de la documentación </label>
+            <select id="estado">
+                <option selected disabled> Seleccione </option>
+                <option> Al dia </option>
+                <option> En trámite </option>
+                <option> Por actualizar </option>
+            </select> <br> 
+            
+            <label for="disponibilidad"> Disponibilidad del Inmueble </label> <br>
+            <input type="date" id="disponibilidad"> <br>
+
+            <label for="imagen"> Fotos del Inmueble </label> <br>
+            <input type="file" id="imagen"> <br>
+
+            <label for="video"> Video del Inmueble </label> <br>
+            <input type="file" id="video"> <br>  <br>
+            
+            <div class="container">
+                <button type="submit" class="btnp"> Publicar </button>
+                <button type="reset" class="btnl"> Limpiar </button>
+            </div>      
+
+        </form>
+    </div>
+
+</body>
+</html>

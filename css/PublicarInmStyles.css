@@ -1,0 +1,273 @@
+/*BARRA SUPERIOR-------------------------------------------------------------------------------------------*/
+
+/* Estilos para la barra de navegación */
+.navbar {
+    height: 60px;
+    font-family: 'Instrument Serif', serif;
+    font-size: larger;
+    letter-spacing: 1px;
+}
+
+.container-fluid {
+    background-color: #242222;
+    height: 60px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #ffffff; 
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #ffffff; 
+    font-weight: bold;
+}
+
+/* Estilos para cuando un botón está activo o seleccionado */
+.navbar-nav .nav-item .active,
+.navbar-nav .nav-item .nav-link:hover {
+    color: #000000; 
+    background-color: #007bff;
+    animation: colorChange 2s infinite; 
+}
+
+/* Estilo interactivo para los botones del menú */
+.navbar-nav .nav-link {
+    padding: 10px 15px;
+    border-radius: 7px;
+    transition: all 0.2s ease-in-out;
+}
+
+.dropdown-divider {
+    background-color: white;
+}  
+  
+/* Estilo para resaltar las opciones "CONTACTO" */
+.navbar-nav .dropdown-menu a.dropdown-item:hover {
+    background-color: #007bff;
+    color: #000000;
+    animation: colorChange 2s infinite;
+}
+
+@keyframes colorChange {
+    0% {
+      background-color: #337ab7;
+    }
+    35% {
+      background-color: #f441a5;
+    }
+    70% {
+      background-color: #ffeb3b;
+    }
+    100% {
+        background-color: #337ab7;
+    }
+}
+
+/*FIN BARRA SUPERIOR-----------------------------------------------------------------------------------------*/
+
+
+/*FORMULARIO------------------------------------------------------------------------------------------------*/
+body {
+    background-image: url("https://cdn.pixabay.com/photo/2016/09/13/01/33/entity-1666224_1280.jpg");    
+    background-repeat: initial;
+    background-size:contain;
+}
+
+.formPubli {    
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 40px;
+    background-color: rgba(17, 17, 17, 0.8);
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.bodyform {
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: right;
+}
+
+.linea {
+    border: none;
+    border-top: 2px solid #fff;
+    opacity: 0.8;
+}
+
+.seccion {
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 2px 2px 4px rgba(223, 217, 217, 0.3);
+} 
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+.subtitulos {
+    font-size: small;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+.tipo_inm {
+    font-weight: normal;
+    display: inline-block;
+    width: 22%;
+    margin-left: 17%;
+}
+
+.niv_equipamiento {
+    font-weight: normal;
+    display: inline-block;
+    width: 28%;
+    margin-left: 13%;
+}
+
+.orientacion_inm {
+    font-weight: normal;
+    display: inline-block;
+    width: 14%;
+    margin-left: 22%;
+}
+
+.serv_publicos {
+    font-weight: normal;
+    display: inline-block;
+    width: 20%;
+    margin-left: 18%;
+}
+
+.carac_zona {
+    font-weight: normal;
+    display: inline-block;
+    width: 28%;
+    margin-left: 13%;
+}
+
+.sis_seguridad {
+    font-weight: normal;
+    display: inline-block;
+    width: 13%;
+    margin-left: 13%;
+}
+
+.moneda{
+    font-weight: normal;
+    display: inline-block;
+    width: 8%;
+    margin-left: 26%;
+}
+
+.pago {
+    font-weight: normal;
+    display: inline-block;
+    width: 18%;
+    margin-left: 9%;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 3px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: transparent;
+    color: white;
+}
+
+input[type="checkbox"], 
+input[type="radio"], 
+input[type="date"],
+input[type="file"] {
+    opacity: 0.6;
+    font-size: small;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.5); 
+    border-radius: 3px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: transparent;
+    color: white;
+}
+
+select option {
+    background-color: black;
+    color: white;
+}
+
+textarea {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 11px;
+    color: white;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 25px;
+}
+
+.btnp{
+    margin-left: 5%;
+    background: rgb(9,121,16);
+    background: linear-gradient(200deg, rgba(9,121,16,1) 23%, rgba(53,96,70,1) 53%, rgba(0,0,0,1) 100%);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    font-size: 16px;
+    text-transform: uppercase; /*transforma el texto mayusculas*/
+    letter-spacing: 2px; /*espacio entre letras*/
+    transition: all 0.3s ease; 
+}
+
+.btnp:hover {
+    background: rgb(53,96,70);
+    background: linear-gradient(90deg, rgba(53,96,70,1) 49%, rgba(9,121,16,1) 100%, rgba(0,0,0,1) 100%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+    cursor: pointer;
+}
+
+.btnl {
+    margin-left: 45%;
+    background: rgb(193,24,16);
+    background: linear-gradient(150deg, rgba(193,24,16,1) 23%, rgba(125,23,11,1) 80%, rgba(0,0,0,1) 100%);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+}
+  
+.btnl:hover {
+    background: rgb(193,24,16);
+    background: linear-gradient(150deg, rgba(193,24,16,1) 31%, rgba(125,23,11,1) 97%, rgba(0,0,0,1) 100%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+    cursor: pointer;
+} 
+
+/*FIN FORMULARIO-------------------------------------------------------------------------------------------*/

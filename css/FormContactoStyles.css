@@ -1,0 +1,204 @@
+/*BARRA SUPERIOR-------------------------------------------------------------------------------------------*/
+
+/* Estilos para la barra de navegación */
+.navbar {
+    height: 60px;
+    font-family: 'Instrument Serif', serif;
+    font-size: larger;
+    letter-spacing: 1px;
+}
+
+.container-fluid {
+  background-color: #242222;
+  height: 60px;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #ffffff; 
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: #ffffff; 
+  font-weight: bold;
+}
+
+/* Estilos para cuando un botón está activo o seleccionado */
+.navbar-nav .nav-item .active,
+.navbar-nav .nav-item .nav-link:hover {
+  color: #000000; 
+  background-color: #007bff;
+  animation: colorChange 2s infinite; 
+}
+
+/* Estilo interactivo para los botones del menú */
+.navbar-nav .nav-link {
+  padding: 10px 15px;
+  border-radius: 7px;
+  transition: all 0.2s ease-in-out;
+}
+
+.dropdown-divider {
+  background-color: white;
+}  
+
+/* Estilo para resaltar las opciones "CONTACTO" */
+.navbar-nav .dropdown-menu a.dropdown-item:hover {
+  background-color: #007bff;
+  color: #000000;
+  animation: colorChange 2s infinite;
+}
+
+@keyframes colorChange {
+  0% {
+    background-color: #337ab7;
+  }
+  35% {
+    background-color: #f441a5;
+  }
+  70% {
+    background-color: #ffeb3b;
+  }
+  100% {
+      background-color: #337ab7;
+  }
+}
+
+/*FIN BARRA SUPERIOR-----------------------------------------------------------------------------------------*/
+
+
+/*CUENTA-----------------------------------------------------------------------------------------------------*/
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://cdn.pixabay.com/photo/2019/12/26/16/51/luxury-suite-4720815_1280.jpg"); 
+  background-repeat: initial;
+  background-size: cover;
+}
+
+.containerCon {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Instrument Serif', serif;
+}
+
+.formCon {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  position: absolute;
+  min-width: 280px;
+  max-width: 25%;
+  width: 25%;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 15px;
+  box-shadow: 0 1rem 1rem  rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(1rem);
+  color: #fff;
+  border: rgba(0, 0, 0, 0.8) 5px double;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 80px;
+  border-bottom-right-radius: 20px;
+}
+
+/*iconos*/
+.input-container {
+  display: flex;
+}
+
+#name,
+#email,
+#message {
+  order: 2;
+}
+
+.material-icons {
+  order: 1;
+  margin-right: 8px;
+  margin-top: 5px;
+}
+
+#icon1,
+#icon2,
+#icon3 {
+  font-size: 38px;
+}
+
+#icon3 {
+  margin-top: 40px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.box {
+  margin-top: 12px;
+  margin-left: 61%;
+  position: relative;
+  width: 120px;
+  height: 45px;
+  overflow: hidden;
+  border: none;
+  background-color: rgb(141, 138, 131);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-top-left-radius: 20px;
+  cursor: pointer;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0 0 10px rgb(104, 134, 218);
+}
+
+.box::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 200px;
+  margin-top: -92px;
+  background: linear-gradient(#00ccff,#d400d4);
+  animation: amm 4s linear infinite;
+}
+
+@keyframes amm {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.text-button {
+  position: relative;
+  font-size: 1.2rem;
+  font-weight: bold;
+  z-index: 1;
+  margin-top: 5px;
+}
+
+.box::after {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  background-color: rgb(141, 138, 131);
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+/*FIN CUENTA-------------------------------------------------------------------------------------------------*/

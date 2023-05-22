@@ -1,0 +1,197 @@
+/*BARRA SUPERIOR-------------------------------------------------------------------------------------------*/
+
+/* Estilos para la barra de navegación */
+.navbar {
+    height: 60px;
+    font-family: 'Instrument Serif', serif;
+    font-size: larger;
+    letter-spacing: 1px;
+}
+
+.container-fluid {
+    background-color: #242222;
+    height: 60px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #ffffff; 
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #ffffff; 
+    font-weight: bold;
+}
+
+/* Estilos para cuando un botón está activo o seleccionado */
+.navbar-nav .nav-item .active,
+.navbar-nav .nav-item .nav-link:hover {
+    color: #000000; 
+    background-color: #007bff;
+    animation: colorChange 2s infinite; 
+}
+
+/* Estilo interactivo para los botones del menú */
+.navbar-nav .nav-link {
+    padding: 10px 15px;
+    border-radius: 7px;
+    transition: all 0.2s ease-in-out;
+}
+
+.dropdown-divider {
+    background-color: white;
+}  
+  
+/* Estilo para resaltar las opciones "CONTACTO" */
+.navbar-nav .dropdown-menu a.dropdown-item:hover {
+    background-color: #007bff;
+    color: #000000;
+    animation: colorChange 2s infinite;
+}
+
+@keyframes colorChange {
+    0% {
+      background-color: #337ab7;
+    }
+    35% {
+      background-color: #f441a5;
+    }
+    70% {
+      background-color: #ffeb3b;
+    }
+    100% {
+        background-color: #337ab7;
+    }
+}
+
+/*FIN BARRA SUPERIOR-----------------------------------------------------------------------------------------*/
+
+
+/*FORMULARIO PQR---------------------------------------------------------------------------------------------*/
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.titulo {
+    text-align: center;
+    background-color: rgba(219, 216, 216, 0.6);
+    backdrop-filter: blur(1rem);
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+.containerPQ {
+    width: 60%;
+    display: flex;
+    text-align: justify;
+    background-color: rgba(219, 216, 216, 0.6);
+    backdrop-filter: blur(1rem);
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+.izq {
+    flex: 1;
+    padding: 20px;
+}
+  
+.der {
+    flex: 1;
+    padding: 20px;
+}
+  
+.titu {
+    text-align: center;
+}
+  
+.secc {
+    margin-bottom: 10px;
+}
+  
+.titulos {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+  
+.escribir {
+    width: 100%;
+    height: 100px;
+    padding: 5px;
+    resize: none;
+    border-radius: 7px;
+    background-color: transparent;
+}
+  
+.btnEnv {
+  padding: 15px 30px;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  transition: 0.5s;
+  background: #535fc7;
+  color: black;
+  font-weight: bold;
+  box-shadow: 0 0 10px #363636, inset 0 0 10px #363636;
+}
+
+.btnEnv:hover {
+  animation: a 0.5s 1 linear;
+}
+
+@keyframes a {
+  0% {
+    transform: scale(0.7, 1.3);
+  }
+
+  25% {
+    transform: scale(1.3, 0.7);
+  }
+
+  50% {
+    transform: scale(0.7, 1.3);
+  }
+
+  75% {
+    transform: scale(1.3, 0.7);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}
+  
+/* Interacción */
+.accordion-button:not(.collapsed) {
+    background-color: #6c757d;
+    color: #fff;
+}
+  
+.accordion-body {
+    background-color: #e9ecef;
+    padding: 10px;
+}
+
+.desc {
+    margin-bottom: 45px;
+}
+
+.accordion-button {
+    font-weight: bold;
+}
+
+/*FIN FORMULARIO PQR---------------------------------------------------------------------------------------*/

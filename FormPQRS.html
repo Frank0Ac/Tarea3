@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Bienes Raíces </title>
+    <link rel="stylesheet" type="text/css" href="css/FormPQRSStyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" 
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" 
+        crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!--Barra superior-->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Index.html" style="color: white;"> Inicio </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="InmuebleDisp.html"> Inmuebles Disponibles </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="PublicarInm.html"> Publicar Inmuebles </a>
+                    </li>                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="Cuenta.html"> Mi Cuenta </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Contacto
+                        </a>
+                        <ul class="dropdown-menu" style="background-color: #242222;">
+                            <li><a class="dropdown-item" href="FormContacto.html" style="color: white;"> Formulario de Contacto </a></li>
+                            <li><a class="dropdown-item" href="FormPQRS.html" style="color: white;"> Formato de PQRS </a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="Presentacion.html" style="color: white;"> Detalles personales </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--PQRS-->
+    <video id="video-background" autoplay loop muted>
+        <source src="img/vid.mp4" type="video/mp4">
+        Tu navegador no soporta el elemento de video.
+    </video>
+    
+    <div class="titulo">
+        <label> <h1> Formulario de PQRS: <br>
+            Peticiones, Quejas, Reclamos y Sugerencias </h1> </label>
+    </div>
+
+    <div class="containerPQ">
+        <div class="izq">
+            <p class="desc">
+                Un PQRS (Pregunta, Queja, Reclamo o Sugerencia) es una solicitud que los clientes pueden 
+                enviar para plantear inquietudes, manifestar insatisfacción o realizar reclamaciones 
+                relacionadas con un producto o servicio. <br> <br>
+                A través del siguiente formulario se puede hacer llegar de manera respetuosa un reconocimiento, 
+                sugerencia, petición, solicitud de información, consulta, reclamo o queja, 
+                dependiendo de su necesidad y respecto a cualquier trámite o servicio que sea competencia 
+                de la pagina de BIENES RAICES.
+            </p>
+
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+                            data-mdb-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"
+                            style="background-color: #e9ecef;">
+                            Reconocimiento
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-mdb-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            Esta opción le permitirá reconocer el buen servicio recibido y/o ofrecido 
+                            por parte de la pagina de BIENES RAICES; La respuesta será informado a los 
+                            tres (03) días calendario después de su recepción.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+                            data-mdb-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo"
+                            style="background-color: #e9ecef;">
+                            Petición
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-mdb-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            Esta opción le permitirá de manera respetuosa solicitar a la pagina de BIENES RAICES 
+                            cualquier información relacionada con la prestación del servicio (csoportes operativos, 
+                            documentos comerciales, referencias). La respuesta o trámite será informado a los 
+                            diez (10) días calendario después de su recepción.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+                            data-mdb-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree"
+                            style="background-color: #e9ecef;">
+                            Queja
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                        data-mdb-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            Seleccione esta opción si Usted requiere manifestar una protesta, censura, 
+                            descontento e inconformidad por la insatisfacción que se le causó en la atención 
+                            prestada por parte de uno o varios funcionarios o de la calidad de la pagina de 
+                            BIENES RAICES. Contamos con diez (10) días calendario para resolver su queja 
+                            o informar el trámite de la misma a partir del día hábil siguiente a su recepción.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFor">
+                        <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+                            data-mdb-target="#flush-collapseFor" aria-expanded="false" aria-controls="flush-collapseFor"
+                            style="background-color: #e9ecef;">
+                            Reclamo
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFor" class="accordion-collapse collapse" aria-labelledby="flush-headingFor"
+                        data-mdb-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            Un reclamo es una oportunidad para que usted nos comunique cualquier insatisfacción, 
+                            problema o inconveniente que haya experimentado con la pagina de BIENES RAICES. 
+                            Queremos asegurarnos de que su experiencia con nosotros sea lo más positiva posible, 
+                            por lo que valoramos enormemente su opinión y deseamos abordar cualquier 
+                            situación que haya surgido.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFive">
+                        <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+                            data-mdb-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive"
+                            style="background-color: #e9ecef;">
+                            Sugerencia
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
+                        data-mdb-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            Si usted desea darnos su opinión, idea o propuesta sobre la forma cómo podemos 
+                            mejorar un proceso interno o la prestación de un servicio, ingrese por esta opción. 
+                            Contados cinco (05) días calendario después de la recepción daremos respuesta o 
+                            información del trámite de la misma.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="der">
+            <form class="formpqr">
+                <div class="secc">
+                    <label for="name" class="titulos"> Tipo de solicitud </label> <br>
+                    <label for=""> Seleccione el tipo de solicitud que desea realizar </label> <br>
+                    <input type="radio" id="reconocimiento" name="grupo1" value="opcion1">
+                    <label for="reconocimiento"> Reconocimiento </label> <br>
+                    <input type="radio" id="peticion" name="grupo1" value="opcion2">
+                    <label for="peticion"> Petición </label> <br>
+                    <input type="radio" id="queja" name="grupo1" value="opcion3">
+                    <label for="queja"> Queja </label> <br>
+                    <input type="radio" id="reclamo" name="grupo1" value="opcion4">
+                    <label for="reclamo"> Reclamo </label> <br>
+                    <input type="radio" id="sugerencia" name="grupo1" value="opcion5    ">
+                    <label for="sugerencia"> Sugerencia </label> <br>        
+                </div>
+                <div class="secc">
+                    <label for="email" class="titulos"> Descripción </label> <br>
+                    <textarea class="escribir" id="message" placeholder="Detalle el motivo de su solicitud" required></textarea>
+                </div>
+                <div class="secc">
+                    <label for="message" class="titulos"> Documentos </label>
+                    <label for=""> Si es el caso, adjuntar documentos que sustenten la solicitud. 
+                        Ej: Facturas, E-mail, Pantallazos del sistema, entre otros. 
+                    </label> <br>
+                    <input type="file" id="arch">
+                </div>
+                <div class="secc">
+                    <label for="email" class="titulos"> Acciones para mejorar </label>
+                    <label for=""> ¿Qué información o sugerencia podría suministrar para mantener 
+                        o mejorar los servicios que presta la pagina de BIENES RAICES? </label> <br>
+                    <textarea class="escribir" id="message"></textarea>
+                </div>
+                <button class="btnEnv" type="submit"> Enviar </button>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- MDB ------------------------------------------------------------------------------------------------>
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript"></script>
+</body>
+</html>

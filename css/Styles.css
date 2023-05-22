@@ -1,0 +1,150 @@
+/*BARRA SUPERIOR-------------------------------------------------------------------------------------------*/
+
+/* Estilos para la barra de navegación */
+.navbar {
+    height: 60px;
+    font-family: 'Instrument Serif', serif;
+    font-size: larger;
+    letter-spacing: 1px;
+}
+
+.container-fluid {
+    background-color: #242222;
+    height: 60px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #ffffff; 
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #ffffff; 
+    font-weight: bold;
+}
+
+/* Estilos para cuando un botón está activo o seleccionado */
+.navbar-nav .nav-item .active,
+.navbar-nav .nav-item .nav-link:hover {
+    color: #000000; 
+    background-color: #007bff;
+    animation: colorChange 2s infinite; 
+}
+
+/* Estilo interactivo para los botones del menú */
+.navbar-nav .nav-link {
+    padding: 10px 15px;
+    border-radius: 7px;
+    transition: all 0.2s ease-in-out;
+}
+
+.dropdown-divider {
+    background-color: white;
+}  
+ 
+/* Estilo para resaltar las opciones "CONTACTO" */
+.navbar-nav .dropdown-menu a.dropdown-item:hover {
+    background-color: #007bff;
+    color: #000000;
+    animation: colorChange 2s infinite;
+}
+
+@keyframes colorChange {
+    0% {
+      background-color: #337ab7;
+    }
+    35% {
+      background-color: #f441a5;
+    }
+    70% {
+      background-color: #ffeb3b;
+    }
+    100% {
+        background-color: #337ab7;
+    }
+}
+
+/*FIN BARRA SUPERIOR-----------------------------------------------------------------------------------------*/
+
+
+/*CARRUSEL DE IMAGENES---------------------------------------------------------------------------------------*/
+#video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.d-block {
+    height: 65vh;
+}
+
+#carouselExampleCaptions {
+    width: 70%;
+    margin: 0 auto; /* Agrega margen automático a los lados */
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}  
+
+.carousel-caption {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 1px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px; 
+    border-radius: 2px;
+}
+
+.carousel-caption:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+}
+
+.carousel-caption h3,
+.carousel-caption p {
+    color: white; 
+}
+
+.carousel-item img {
+    border-radius: 20px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+    transition: transform 0.3s; 
+}
+  
+.carousel-item img:hover {
+    transform: scale(1.05); 
+}  
+
+.carousel-control-prev-icon, 
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.carousel-control-prev-icon:hover, 
+.carousel-control-next-icon:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+    transform: scale(2);
+} 
+
+.carousel-indicators {
+    transform: translateY(-40%);
+}
+  
+.carousel-indicators button {
+    border-radius: 50%;
+    background-color: #ccc;
+    transition: background-color 0.3s ease;
+}
+  
+.carousel-indicators button.active {
+    background-color: #f00;
+}
+
+/*FIN CARRUSEL DE IMAGENES-----------------------------------------------------------------------------------*/ 

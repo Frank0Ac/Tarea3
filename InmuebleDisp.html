@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Bienes Raíces </title>
+    <link rel="stylesheet" type="text/css" href="css/InmuebleDispStyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" 
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" 
+        crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!--Barra superior-->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Index.html" style="color: white;"> Inicio </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="InmuebleDisp.html"> Inmuebles Disponibles </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="PublicarInm.html"> Publicar Inmuebles </a>
+                    </li>                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="Cuenta.html"> Mi Cuenta </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Contacto
+                        </a>
+                        <ul class="dropdown-menu" style="background-color: #242222;">
+                            <li><a class="dropdown-item" href="FormContacto.html" style="color: white;"> Formulario de Contacto </a></li>
+                            <li><a class="dropdown-item" href="FormPQRS.html" style="color: white;"> Formato de PQRS </a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="Presentacion.html" style="color: white;"> Detalles personales </a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cartas -->
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card">
+                <img src="img/casa.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title" style="color: white;"> Casa </h5> 
+                    <label class="city"> Ipiales - Nariño </label>
+                    <p class="card-text">
+                        Comoda y hermosa casa en un exclusivo conjunto cerrado. 
+                    </p>
+                    <a href="#" class="btn btn-primary"> Ver Inmueble </a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="img/inmueble.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title" style="color: white;"> Casa </h5>
+                    <label class="city"> Pasto - Nariño </label>
+                    <p class="card-text">
+                        Cuenta con amplios espacios interiores que brindan comodidad y flexibilidad.
+                    </p>
+                    <a href="#" class="btn btn-primary"> Ver Inmueble </a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="img/edificio.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title" style="color: white;"> Edificio </h5>
+                    <label class="city"> Ipiales - Nariño </label>
+                    <p class="card-text">
+                        Ofrece una experiencia de lujo con amenidades 
+                        exclusivas y vistas panorámicas de la ciudad.
+                    </p>
+                    <a href="#" class="btn btn-primary"> Ver Inmueble </a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="img/departamentos.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title" style="color: white;"> Casa </h5>
+                    <label class="city"> Bogotá - Cundinamarca </label>
+                    <p class="card-text">
+                        La opción ideal para aquellos que buscan seguridad, tranquilidad y calidad de vida.
+                    </p>
+                    <a href="#" class="btn btn-primary"> Ver Inmueble </a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="img/apartamento.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title" style="color: white;"> Apartamento </h5>
+                    <label class="city"> Pasto - Nariño </label>
+                    <p class="card-text">
+                        Cuenta con cómodas habitaciones, ideales para el descanso y 
+                        la privacidad de cada miembro de la familia. 
+                    </p>
+                    <a href="#" class="btn btn-primary"> Ver Inmueble </a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="img/finca.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title" style="color: white;"> Finca </h5>
+                    <label class="city"> Pilcuan - Nariño </label>
+                    <p class="card-text">
+                        Rodeada de exuberante vegetación y paisajes pintorescos. 
+                        Ofrece tranquilidad y serenidad.
+                    </p>
+                    <a href="#" class="btn btn-primary"> Ver Inmueble </a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="img/garaje.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title" style="color: white;"> Garaje </h5>
+                    <label class="city"> Ipiales - Nariño </label>
+                    <p class="card-text">
+                        Espacioso y funcional que brinda seguridad y protección para tus vehículos.
+                    </p>
+                    <a href="#" class="btn btn-primary"> Ver Inmueble </a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="img/piscina.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title" style="color: white;"> Piscina </h5>
+                    <label class="city"> Chachagüí - Nariño </label>
+                    <p class="card-text">
+                        Con aguas cristalinas en esta piscina puedes disfrutar 
+                        de momentos de diversión y descanso bajo el sol.
+                    </p>
+                    <a href="#" class="btn btn-primary"> Ver Inmueble </a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="img/terreno.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title" style="color: white;"> Terreno </h5>
+                    <label class="city"> Ipiales - Nariño </label>
+                    <p class="card-text">
+                        Es el terreno perfecto para construir la casa de tus sueños 
+                        o desarrollar proyectos únicos.
+                    </p>
+                    <a href="#" class="btn btn-primary"> Ver Inmueble </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
