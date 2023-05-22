@@ -85,6 +85,7 @@ body {
 h1 {
   text-align: center;
   font-family: 'Instrument Serif', serif;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .formCon {
@@ -149,7 +150,7 @@ textarea {
 }
 
 .box {
-  margin-top: 12px;
+  margin-top: 15px;
   margin-left: 61%;
   position: relative;
   width: 120px;
@@ -182,6 +183,22 @@ textarea {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.inpes {
+  background-color: #212121;
+  border: 2px solid white;
+  border-radius: 5px;
+  box-shadow: 2px 2px 1px rgb(249, 255, 85);
+}
+
+.inpes:focus {
+  color: rgb(0, 255, 255);
+  background-color: #212121;
+  outline-color: rgb(0, 255, 255);
+  box-shadow: -3px -3px 15px rgb(0, 255, 255);
+  transition: .1s;
+  transition-property: box-shadow;
 }
 
 .text-button {
